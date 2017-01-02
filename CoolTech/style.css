@@ -1,0 +1,562 @@
+@charset "UTF-8";
+
+body {
+	margin:0;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:#f1f1f2;
+}
+
+h1, h2, h3, h4, h5, h6, span {
+	margin:0;
+	padding:0;
+}
+
+.clearfix::before, .clearfix::after {
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix::after {
+    clear: both;
+}
+.clearfix::before, .clearfix::after {
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+header {
+	background: -webkit-linear-gradient(#0066ff, #66ccff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0066ff, #66ccff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0066ff, #66ccff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0066ff, #66ccff); /* Standard syntax (must be last) */
+}
+
+header .wrapper {
+    position: relative;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 980px;
+}
+.clearfix {
+}
+
+header .top-nav {
+    float: right;
+    list-style: outside none none;
+    margin: 0;
+}
+
+header .call-center {
+    clear: right;
+    float: right;
+    list-style-type: none;
+    margin: 17px 0 0;
+}
+
+header .call-center li.fiz {
+    background-image: url("../assets/img/layout/new/call-center-strip-woman.png");
+}
+
+li.fiz img {
+	width: 30px;
+}
+
+header .call-center li {
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+.top-nav li:first-child::before {
+    display: none;
+}
+
+.top-nav li::before {
+    content: "|";
+    margin: 0 8px;
+}
+
+.top-nav  a:link,
+.top-nav a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.top-nav li:first-child::before {
+    display: none;
+}
+
+.top-nav li::before {
+    content: "|";
+    margin: 0 8px;
+}
+
+.top-nav li {
+    color: #fff;
+    float: left;
+    font-size: 11px;
+    line-height: 21px;
+}
+
+img {
+	vertical-align:bottom;
+}
+#wrapper {
+	width:980px;
+	background-color:#ffffff;
+	margin:0 auto;
+}
+#header {
+	height:30px;	
+	background: -webkit-linear-gradient(#696969, #000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#696969, #000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#696969, #000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#696969, #000); /* Standard syntax (must be last) */
+}
+
+#logo {
+	float:left;
+	padding: 20px 20px 5px 5px;
+}
+
+#leftnav  {
+	float:left;
+	font-size: 17px;
+}
+
+#leftnav ul  {
+    margin:15px 0 0 8px;
+	padding:0;
+	list-style:none;
+	width: 165px;
+	border: 1px solid #b6b6b6;
+}
+
+#leftnav ul:first-child {
+    border-top: 1px solid #b6b6b6;
+}
+
+#leftnav ul li  {
+	margin:0;
+	padding:0;
+	border-top: 1px solid #f1f2f2;
+}
+
+#leftnav ul li a:link,
+#leftnav ul li a:visited {
+	background-color: #fff;
+	text-decoration: none;
+	padding:8px 20px;
+	display:block;
+	color:#333;
+	text-decoration:none;
+}
+
+#leftnav ul li a:hover {
+	background:#66ccff;
+}
+#leftnav ul li a:active {
+	background:#66ccff;
+}
+
+#leftnav ul div {
+	position:absolute;
+	left:0;
+	background-color: pink;
+	z-index:200;
+	width:200px;
+	display:none; /* u startu */
+	left: 450px;
+	top: 112px;
+	width: 797px;
+}
+
+#leftnav ul li:hover > div{
+	display:block;
+}
+
+#nav {
+	float:left;
+	margin-left:10px;
+}
+#nav ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#nav ul li {
+	float:left;
+	position:relative;
+	margin:0 5px;
+}
+
+#nav ul li.proizvod {
+	margin: 0;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 3px 37px 0 20px;
+	text-transform: uppercase;
+}
+
+#nav ul li.proizvod span {
+	padding:5px 20px 5px;
+}
+
+#nav ul li a {
+	height:20px;
+	line-height:20px;
+	padding:5px 20px 5px;
+	display:block;
+	font-weight:bold;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+#nav ul li a:link,
+#nav ul li a:visited {
+	color:#fff;
+	text-decoration:none;
+}
+#nav ul li a:hover {
+	background:rgba(255,255,255,0.2);
+}
+#nav ul li a:active {
+	background:rgba(255,255,255,0.4);
+}
+
+#nav ul ul {
+	position:absolute;
+	left:0;
+	background:rgba(0,0,0,0.7);
+	z-index:200;
+	width:200px;
+	display:none;
+}
+#nav ul ul li {
+	float:none;
+}
+#nav ul ul ul {
+	left:200px;
+	top:0;
+}
+
+#nav ul li:hover > ul	{
+	display:block;
+	}
+
+#banner {
+	width:800px;
+	float: right;
+}
+
+#banner a img {
+	width:800px;
+	height: 290px;
+	float:right;
+}
+
+.proizvod-grupa {
+	width:900px;
+	float:left;
+	background-color:#fff;
+	border: 1px solid #e7e7e7;
+	margin: 30px;
+}
+
+.proizvod-slika {
+	float: left;
+	width:496px;
+	margin: 10px 0 10px 10px;
+}
+
+.proizvod-velika-slika {
+	float: left;
+	width:337px;
+	height:337px;
+	margin: 10px 0 0 80px;
+}
+
+.proizvod-mala-slika {
+	width:150px;
+	height:150px;
+	margin: 10px 0 10px 10px;
+	float: left;
+}
+
+.proizvod-detalji {
+	float: left;
+	width:330px;
+	margin: 10px 0 0 10px;
+	padding: 40px 20px;
+}
+
+.proizvod-detalji h2 {
+	color: #66ccff;
+	font-size: 16px;
+}
+
+.proizvod-detalji p {
+	font-size: 13px;
+}
+
+.proizvod-detalji p strong {
+	text-transform: uppercase;
+}
+
+p.mp-cena {
+	font-size: 18px;
+	padding: 16px 35px 0 0;
+	text-align: right;
+	text-decoration: line-through;
+	margin: 0;
+}
+
+p.cena {
+	font-size: 18px;
+	color:#FF8330;
+	text-align: right;
+	padding: 5px 35px 20px;
+	margin: 0;
+}
+
+p.cena strong {
+	font-size: 38px;
+	font-weight: bold;
+}
+
+.map-grupa {
+	width:100%;
+	float:left;
+	background-color:#fff;
+}
+
+.map {
+	border: 1px solid #e7e7e7;
+    float: left;
+    margin: 20px 0 20px 20px;
+    width: 220px;
+}
+
+.map img {
+	width: 100%;
+}
+
+.promocija-grupa {
+	width:100%;
+	float:left;
+	background-color:#fff;
+}
+
+.promocija-grupa h2 {
+	color: #FF8330;
+	padding: 20px 0 0 20px;
+}
+
+.promocija {	
+	border: 1px solid #e7e7e7;
+    float: left;
+    margin: 20px 0 0 20px;
+    width: 220px;
+    height: 280px;
+}
+
+.promocija img { 
+	width:180px;
+	height:180px;
+	padding: 15px 30px;
+}
+
+.promocija a.naziv {
+	font-size:14px;
+	font-weight:bold;
+	color:#66ccff;
+}
+
+.promocija p {
+	font-size:12px;
+	margin:0;
+	text-align:center;
+}
+
+.promocija p.akcijska-cena {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FF8330;
+	padding: 4px;
+}
+
+.promo-baner {
+	width:461px;
+	border: 1px solid #ccc;
+	float: left;
+	margin: 20px 0 20px 20px;
+}
+
+.promo-baner img {
+	width:100%;
+	height: 180px;
+}
+
+.slideshow {
+	width: 500px;
+	height: 500px;
+	float:right;
+	background-color: red;
+	background:url("proizvodi/GORENJE-VESMASINA-W7543LO.xjpg") no-repeat;
+}
+
+div.bx-controls.bx-has-pager.bx-has-controls-direction.bx-has-controls-auto div.bx-pager.bx-default-pager {
+	display: none !important;
+}
+
+.bx-wrapper .bx-viewport {
+	box-shadow: none !important;
+	border: none !important;
+}
+
+.bx-wrapper {
+	margin: 0 !important;
+}
+
+ #class {
+    float:left;
+	position:relative;
+}
+
+.preko {
+	position:absolute;
+	bottom:30px;
+	right:30px;
+	width:450px;
+}
+#main {
+	padding:20px;
+	width:950px;
+	float:left;
+}
+
+#main div.promo {
+	width:200px;
+	display: inline-block;
+	padding: 5px;
+	margin-right: 20px;
+}
+
+#main div.promo img {
+	width:200px;
+}
+
+#main div.promo p {
+	margin: 0;
+}
+
+#sidebar {
+	background:#eeeeee;
+	padding:15px;
+	width:300px;
+	float:right;
+}
+
+
+#footer {
+	clear:both;
+	text-align:center;
+	font-size:13px;
+	padding:12px;
+	border-top:4px solid #eaeaea;
+	background: -webkit-linear-gradient(#0066ff, #66ccff);
+    background: -o-linear-gradient(#0066ff, #66ccff);
+    background: -moz-linear-gradient(#0066ff, #66ccff);
+    background: linear-gradient(#0066ff, #66ccff);
+}
+
+#footer a {
+	padding: 5px;
+	color: #fff;
+	text-decoration: none;
+}
+
+#footer p {
+	color: #fff;
+}
+
+.block {
+	overflow:hidden;
+	margin-bottom:20px;
+}
+
+.introSlika {
+	float:right;
+}
+
+#main h1,
+#main h2,
+#sidebar h1,
+#sidebar h2 {
+	font-size:21px;
+	text-transform:uppercase;
+	padding-bottom:5px;
+}
+#main h1,
+#main h2 {
+	border-bottom:3px solid #921113;
+}
+#sidebar h1,
+#sidebar h2 {
+	border-bottom:3px solid #cccccc;
+}
+
+#intro p {
+	padding-right:300px;
+}
+
+.vest {
+	width:300px;
+	margin-right:20px;
+	float:left;
+}
+.vest:nth-of-type(2n) {
+	margin-right:0;
+}
+
+.vest h3 {
+	color:#727272;
+	text-transform:uppercase;
+	font-size:16px;
+}
+
+.vest img {
+	float:left;
+	margin:0 10px 1px 0;
+}
+
+#tags ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#tags ul li {
+	float:left;
+}
+#tags ul li a {
+	display:block;
+	padding:5px 7px;
+	margin:0 5px 5px 0;
+}
+#tags ul li a:link,
+#tags ul li a:visited {
+	color:#ffffff;
+	text-decoration:none;
+	background:#aaaaaa;
+}
+#tags ul li a:hover {
+	background:#921113;
+}
